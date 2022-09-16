@@ -1,38 +1,108 @@
 .App {
   text-align: center;
+  background-color: #00203FFF;
+  width: auto;
+  height: auto;
+  min-width: 50vw;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+article{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top:0;
+  height: 15vh;
+  border-bottom: solid #ADEFD1FF 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: #ADEFD1FF ;
+  color: #00203FFF;
+}
+h1 {
+  margin: 0 0 0 30px;
+  color:  #ADEFD1FF;
+}
+h2{
+  margin: 30px;
+  color:  #ADEFD1FF;
+}
+h3{
+  color: #00203FFF;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  margin: 0 30px;
+  font-weight: bold;
+  color:  #00203FFF;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post{
+  padding: 0 20px;
+  width: 50%;
+  max-width: 500px;
+  min-width: 350px;
+  background-color: #ADEFD1FF;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: solid black 2px
+}
+.singelpost{
+  padding: 0 20px;
+  width: 50%;
+  max-width: 500px;
+  min-width: 350px;
+  background-color: #ADEFD1FF;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.singelpost h2, h3{
+  color:#00203FFF;
+}
+
+.singelPostMain{
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.singelPostComments{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.comment{
+  background-color: #00203FFF;
+  margin: 20px;
+  border-radius: 10px;
+  color:#ADEFD1FF;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kommentar{
+  padding: 20px;
+  border:#ADEFD1FF solid 1px;
 }
+
+.hidden{
+  display: none;
+}
+
+
+
